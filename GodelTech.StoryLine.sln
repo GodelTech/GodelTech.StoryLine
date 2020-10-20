@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.StoryLine", "GodelTech.StoryLine\GodelTech.StoryLine.csproj", "{7B60ACD1-F420-4E92-B565-258559F18A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.StoryLine", "src\GodelTech.StoryLine\GodelTech.StoryLine.csproj", "{00000000-0000-0000-0000-000000000001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodelTech.StoryLine.Tests", "GodelTech.StoryLine.Tests\GodelTech.StoryLine.Tests.csproj", "{840356BC-BF89-4F83-A228-DED4C778C5DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GodelTech.StoryLine.Tests", "test\GodelTech.StoryLine.Tests\GodelTech.StoryLine.Tests.csproj", "{840356BC-BF89-4F83-A228-DED4C778C5DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B60ACD1-F420-4E92-B565-258559F18A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B60ACD1-F420-4E92-B565-258559F18A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B60ACD1-F420-4E92-B565-258559F18A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B60ACD1-F420-4E92-B565-258559F18A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000000-0000-0000-0000-000000000001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000000-0000-0000-0000-000000000001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000000-0000-0000-0000-000000000001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000000-0000-0000-0000-000000000001}.Release|Any CPU.Build.0 = Release|Any CPU
 		{840356BC-BF89-4F83-A228-DED4C778C5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{840356BC-BF89-4F83-A228-DED4C778C5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{840356BC-BF89-4F83-A228-DED4C778C5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -24,8 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C1EC1FBB-1956-42F6-8D94-B30BDE3E5AB5}
 	EndGlobalSection
 EndGlobal

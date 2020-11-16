@@ -8,23 +8,23 @@ namespace GodelTech.StoryLine.Tests.Expectations
 {
     public class LazyExpectationThreeParametersTests
     {
-        private readonly LazyExpectation<ExpectationBuilder, TestAction, TestAction, TestAction> _lazyExpectation;
+        private readonly LazyExpectation<ExpectationBuilder, TestAction, TestAction, TestAction> _underTest;
 
         public LazyExpectationThreeParametersTests()
         {
-            _lazyExpectation = new LazyExpectation<ExpectationBuilder, TestAction, TestAction, TestAction>();
+            _underTest = new LazyExpectation<ExpectationBuilder, TestAction, TestAction, TestAction>();
         }
 
         [Fact]
         public void Validate_WhenActorIsNull_ShouldThrowArgumentNullException()
         {
-            Assert.Throws<ArgumentNullException>(() => _lazyExpectation.Validate(null));
+            Assert.Throws<ArgumentNullException>(() => _underTest.Validate(null));
         }
 
         [Fact]
         public void Validate_WhenActorIsNull_ShouldThrowExpectationException()
         {
-            Assert.Throws<ExpectationException>(() => _lazyExpectation.Validate(new Actor()));
+            Assert.Throws<ExpectationException>(() => _underTest.Validate(new Actor()));
         }
     }
 }

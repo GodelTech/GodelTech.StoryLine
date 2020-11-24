@@ -30,7 +30,8 @@ namespace GodelTech.StoryLine.Tests.Services
                         FirstName = "Jane",
                         LastName = "Doe"
                     }
-                } };
+                } 
+            };
         }
 
         [Fact]
@@ -85,6 +86,19 @@ namespace GodelTech.StoryLine.Tests.Services
         {
             AddArtifactsToCollection();
             _underTest.Get<TestAction>((x) => x.User.LastName == "John").Should().BeNull();
+        }
+
+        [Fact]
+        public void Clear_ShouldRemoveAllArtifacts()
+        {
+            AddArtifactsToCollection();
+            _underTest.Clear();
+        }
+
+        [Fact]
+        public void Clear_WhenNoArtifacts_ShouldNotThrowException()
+        {
+            _underTest.Clear();
         }
 
         private void AddArtifactsToCollection()
